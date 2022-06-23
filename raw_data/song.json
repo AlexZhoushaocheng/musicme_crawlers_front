@@ -1,0 +1,141 @@
+{
+    "name": "等一分钟 Wait One Minute",
+    "id": 1493994302,
+    "pst": 0,
+    "t": 0,
+    "ar": [
+        {
+            "id": 37435441,
+            "name": "徐誉滕",
+            "tns": [],
+            "alias": [
+                "Xu Yu Teng"
+            ],
+            "alia": [
+                "Xu Yu Teng"
+            ]
+        }
+    ],
+    "alia": [],
+    "pop": 100.0,
+    "st": 0,
+    "rt": "",
+    "fee": 8,
+    "v": 8,
+    "crbt": null,
+    "cf": "",
+    "al": {
+        "id": 98060554,
+        "name": "滕爱Teng Love",
+        "picUrl": "http://p3.music.126.net/Z3UPSHkpGsKQ8Md4v3cDAQ==/109951165455249371.jpg",
+        "tns": [],
+        "pic_str": "109951165455249371",
+        "pic": 109951165455249371
+    },
+    "dt": 236259,
+    "h": {
+        "br": 320000,
+        "fid": 0,
+        "size": 9453236,
+        "vd": -42947.0,
+        "sr": 44100
+    },
+    "m": {
+        "br": 192000,
+        "fid": 0,
+        "size": 5671959,
+        "vd": -40333.0,
+        "sr": 44100
+    },
+    "l": {
+        "br": 128000,
+        "fid": 0,
+        "size": 3781320,
+        "vd": -38653.0,
+        "sr": 44100
+    },
+    "sq": null,
+    "hr": null,
+    "a": null,
+    "cd": "01",
+    "no": 11,
+    "rtUrl": null,
+    "ftype": 0,
+    "rtUrls": [],
+    "djId": 0,
+    "copyright": 1,
+    "s_id": 0,
+    "mark": 8320,
+    "originCoverType": 0,
+    "originSongSimpleData": null,
+    "tagPicList": null,
+    "resourceState": true,
+    "version": 8,
+    "songJumpInfo": null,
+    "entertainmentTags": null,
+    "single": 0,
+    "noCopyrightRcmd": null,
+    "rtype": 0,
+    "rurl": null,
+    "mst": 9,
+    "cp": 743010,
+    "mv": 0,
+    "publishTime": 1224000000000,
+    "privilege": {
+        "id": 1493994302,
+        "fee": 8,
+        "payed": 0,
+        "st": 0,
+        "pl": 128000,
+        "dl": 0,
+        "sp": 7,
+        "cp": 1,
+        "subp": 1,
+        "cs": false,
+        "maxbr": 320000,
+        "fl": 128000,
+        "toast": false,
+        "flag": 261,
+        "preSell": false,
+        "playMaxbr": 320000,
+        "downloadMaxbr": 320000,
+        "maxBrLevel": "exhigh",
+        "playMaxBrLevel": "exhigh",
+        "downloadMaxBrLevel": "exhigh",
+        "plLevel": "standard",
+        "dlLevel": "none",
+        "flLevel": "standard",
+        "rscl": null,
+        "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": null
+        },
+        "chargeInfoList": [
+            {
+                "rate": 128000,
+                "chargeUrl": null,
+                "chargeMessage": null,
+                "chargeType": 0
+            },
+            {
+                "rate": 192000,
+                "chargeUrl": null,
+                "chargeMessage": null,
+                "chargeType": 1
+            },
+            {
+                "rate": 320000,
+                "chargeUrl": null,
+                "chargeMessage": null,
+                "chargeType": 1
+            },
+            {
+                "rate": 999000,
+                "chargeUrl": null,
+                "chargeMessage": null,
+                "chargeType": 1
+            }
+        ]
+    }
+}
