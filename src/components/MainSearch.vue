@@ -2,6 +2,7 @@
 import { defineComponent } from 'vue'
 import { ref } from 'vue'
 import axios from 'axios'
+import Song from './Song.vue'
 
 const search_txt = ref("")
 const song_infos = ref({})
@@ -36,19 +37,42 @@ function search(keyword: MouseEvent) {
   })
 }
 
+function collect_song(song_id: string, name: string) {
+  axios({
+    // headers: {"Access-Control-Allow-Origin": "*"} ,
+    method: 'get',
+    url: '/api/save/' +song_id,
+    // timeout: 1000,
+    responseType: 'text'
+  }).then((response) => {
+    console.log(response.data)
+    console.log(typeof response.data)
+    console.log(response.status)
+
+    if (response.status == 200) {
+      alert(name + " 收藏成功")
+    }else{
+      alert(name + " 收藏失败")
+    }
+  })
+}
+
 </script>
 
 <template>
-    <input type="text" v-model="search_txt" />
+  <input type="text" v-model="search_txt" />
 
-    <button v-on:click="search">search</button>
-    <div>
-        <div v-for="(key,item) in song_infos" :key = "item">{{key['name']}} {{key['ar'][0]['name']}} <button>下载</button></div>
-        
-    </div>
+  <button v-on:click="search">search</button>
+  <div>
+    <div v-for="(key,item) in song_infos" :key="item">{{key['name']}} {{key['ar'][0]['name']}}<button><a
+          :href="'/api/download/'+key['id']" target="_blank" download>Download</a></button>
+          <button @click="collect_song(key['id'], key['name'])">Collect</button>
+          </div>
+    <!-- <div v-for="(key,item) in song_infos" :key = "item">{{key['name']}} {{key['ar'][0]['name']}} <button v-on:click="download_song(key['id'])">下载</button> <a :href="'/api/download/'+key['id']" target="_blank">Download</a></div> -->
+  </div>
 
 </template>
 
 <style scoped>
-
+a{text-decoration:none}
 </style>
