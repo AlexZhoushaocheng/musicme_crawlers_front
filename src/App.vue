@@ -2,13 +2,18 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 // import HelloWorld from './components/HelloWorld.vue'
-import MainSearchVue from './components/MainSearch.vue';
+// import MainSearchVue from './components/MainSearch.vue';
+
+import HomeVue from './components/Home.vue';
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" height="80"/>
-  <!-- <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" /> -->
-  <MainSearchVue></MainSearchVue>
+<div>
+<img alt="Vue logo" src="./assets/logo.png" height="80"/>
+</div>
+  
+  <!-- <a-image height="80px" src="./src/assets/logo.png"></a-image> -->
+  <HomeVue></HomeVue>
 </template>
 
 <style>
@@ -18,6 +23,6 @@ import MainSearchVue from './components/MainSearch.vue';
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 10px;
 }
 </style>
